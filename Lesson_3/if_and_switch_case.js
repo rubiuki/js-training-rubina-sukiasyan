@@ -1,4 +1,4 @@
-const {userInput} = require("./userInput");
+const {userInput} = require("../utils/userInput");
 const myInput = userInput("Please provide number from 1-7: ");// Problem:
 
 // You are building a scheduling application that requires converting a numeric input (1-7) into the corresponding day of the week.
