@@ -4,26 +4,35 @@
 // Write two programs one using the conditional branching if
 // Another using the ternary operator (?)
 // Write your code here
-let number = -5
+let number = -5;
 
-if(number > 0) {
-    if (number % 2) {
-        console.log("Odd number!")
-    } else {
-        console.log("Even number!")
-    }
+if (number > 0) {
+  if (number % 2) {
+    console.log("Odd number!");
+  } else {
+    console.log("Even number!");
+  }
 } else {
-    console.log("Please enter only natural numbers!")
+  console.log("Please enter only natural numbers!");
+}
+// Rubina jan you did not cover the range <= 0 here, you don't need the (numbe > 0) check here
+// correct codde
+if (num % 2 === 0) {
+  console.log("Even");
+} else {
+  console.log("Odd");
 }
 
 //With ternary operator
 console.log(
-    number > 0
-        ? number % 2
-            ? "Odd number!"
-            : "Even number!"
-        : "Please enter only natural numbers!"
+  number > 0
+    ? number % 2
+      ? "Odd number!"
+      : "Even number!"
+    : "Please enter only natural numbers!"
 );
+// The same here
+console.log(num % 2 === 0 ? "Even" : "Odd");
 
 // Task 2: Pass or Fail
 // Ask the user for their exam score (0-100).
@@ -32,23 +41,21 @@ console.log(
 // Another using the ternary operator (?)
 // Write your code here
 
-let examScore = 15
+let examScore = 15;
 
-if(examScore >= 50 && examScore <= 100){
-    console.log("Pass!")
-}
-else if (examScore >= 0){
-    console.log("Fail!")
-}
-else{
-    console.log("Exam score should be a number in range of 0-100!")
+if (examScore >= 50 && examScore <= 100) {
+  console.log("Pass!");
+} else if (examScore >= 0) {
+  console.log("Fail!");
+} else {
+  console.log("Exam score should be a number in range of 0-100!");
 }
 
 //With ternary operator
 console.log(
-    examScore >= 50 && examScore <= 100
-        ? "Pass!"
-        : examScore >= 0
-            ? "Fail!"
-            : "Exam score should be a number in range of 0-100!"
+  examScore >= 50 && examScore <= 100
+    ? "Pass!"
+    : examScore >= 0
+    ? "Fail!"
+    : "Exam score should be a number in range of 0-100!"
 );
