@@ -1,4 +1,4 @@
-const {userInput} = require("../utils/userInput");
+const {userInput} = require("../../utils/userInput");
 
 // Task 1: Basic Calculator
 // Objective:

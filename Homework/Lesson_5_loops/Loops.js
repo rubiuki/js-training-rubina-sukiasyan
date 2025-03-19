@@ -1,4 +1,4 @@
-const {userInput} = require("../utils/userInput");
+const {userInput} = require("../../utils/userInput");
 
 // 1. While Loop Task – Reverse Counting
 // Requirements:
