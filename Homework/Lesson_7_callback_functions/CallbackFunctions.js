@@ -33,6 +33,30 @@ function validateCredentials(username, password){
 }
 
 console.log(login('ruby', 'ruby5!', validateCredentials));
+// Rubina jan the task is not implemented against the requirements
+// Please read the requirements again
+// You should have a function that checks if the username and password are correct or not
+// And in the same function you should call the callback that logs the message
+// The correct solution should be
+let usernameInDb = "ruby";
+let passwordInDb = "ruby5!";
+
+function login(username, password, callback){
+    // Call the callback with the result of validateCredentials
+    const message = validateCredentials(username, password);
+    return callback(message);
+}
+
+function validateCredentials(username, password){
+    return username === usernameInDb && password === passwordInDb?
+        "You are successfully logged in!" : "Wrong credentials! Try again!";
+}
+
+// Log the message returned by the callback
+console.log(login('ruby', 'ruby5!', function(message) {
+    console.log(message); // Output the message from the callback
+}));
+
 
 // Task 3: Sum of Numbers (Using for Loop and Callback)
 // Requirements:
@@ -54,3 +78,18 @@ function sum(n){
 }
 
 console.log(sumNumbersUpTo(8, sum));
+// The same here, the task is not implemented in accordance to the requirements
+// The correct solution should be
+function sumNumbersUpTo(n, callback) {
+  let totalSum = 0;
+  for (let i = 1; i <= n; i++) {
+    totalSum += i;
+  }
+  callback(totalSum);
+}
+
+function logSum(n) {
+  console.log(n);
+}
+
+console.log(sumNumbersUpTo(8, logSum));
